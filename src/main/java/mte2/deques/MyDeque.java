@@ -46,8 +46,9 @@ import java.util.Iterator;
     // ... for iterator ...
     @Override
     public Iterator<E> iterator() {
+        //There's no way this is the intended return however I'm assuming it's better then null.
+        return list.listIterator();
 
-        return null;
     }
 
     public static void main(String[] args) { 
